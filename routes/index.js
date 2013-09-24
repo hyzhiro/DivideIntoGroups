@@ -8,6 +8,3 @@ exports.index = function(req, res){
   res.redirect('/members');
 };
 
-exports.members = function(req, res){
-  res.render('index', { title: 'Express' });
-};
