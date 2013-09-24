@@ -5,7 +5,21 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <form action="/members" method="POST">
+      メンバー<br/>
+      <input type="text" name="member1" /><br/>
+      <input type="text" name="member2" /><br/>
+      <input type="text" name="member3" /><br/>
+      <input type="text" name="member4" /><br/>
+      <input type="text" name="member5" /><br/>
+      <input type="text" name="member6" /><br/>
+      何チーム？<br/>
+      <input type="radio" name="teams" value="2" checked="true" />2&nbsp;
+      <input type="radio" name="teams" value="3" />3&nbsp;
+      <input type="radio" name="teams" value="4" />4&nbsp;
+      <br/>
+      <input type="submit" value="チーム分け" />
+    </form>
   </body>
 </html>
